@@ -389,63 +389,63 @@ void circleDemo(void){
 void grayCodeDemo(void){
   //Gray code fill demo
   Fill_LCD(0x00, 0xFF, 0xFF);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0x00, 0xFF, 0xBF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0xFF, 0x7F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0xFF, 0x3F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0xFF, 0x00);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0x3F, 0xFF, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x7F, 0xFF, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xBF, 0xFF, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0xFF, 0x00);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0xFF, 0xFF, 0x3F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0xFF, 0x7F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0xFF, 0xBF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0xFF, 0xFF);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0xFF, 0xBF, 0xFF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x7F, 0xFF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x3F, 0xFF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x00, 0xFF);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0xFF, 0x00, 0xBF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x00, 0x7F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x00, 0x3F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0xFF, 0x00, 0x00);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0xBF, 0x00, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x7F, 0x00, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x3F, 0x00, 0x00);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0x00, 0x00);
-  delay(200);
+  nrf_delay_ms(200);
   Fill_LCD(0x00, 0x00, 0x3F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0x00, 0x7F);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0x00, 0xBF);
-  delay(200); //transition
+  nrf_delay_ms(200); //transition
   Fill_LCD(0x00, 0x00, 0xFF);
-  delay(200);
+  nrf_delay_ms(200);
 }
 
 
@@ -487,7 +487,7 @@ void cheesyLineDemo(void){
              0, y,
              r + -3, g--, b++);
   }
-  delay(1000);
+  nrf_delay_ms(1000);
 
   Fill_LCD(0x00, 0x00, 0x00);
   for (i = 2; i < 120; i += 2)
